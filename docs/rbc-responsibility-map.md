@@ -43,14 +43,17 @@ This document is the permanent source of truth for scope and teaching. Every fut
 6. Ask the learner to explain or modify the block before progressing.
 7. Commit only verified outcomes; never fabricate metrics, users, or experiments.
 
-## Implementation stages
+## Implementation milestones (M01–M08)
+
+These IDs are used consistently across all project documents (see [ADR 0001](adr/0001-unified-milestone-numbering.md)).
 
 - M01 top-of-book features and tests (R2, R4): initial code created, execution verification pending.
 - M02 commercial requirements, quote specification and pricing baseline (R1, R2).
 - M03 data provenance, time-aware pipelines and scale benchmarking (R2, R3).
 - M04 model baselines and TLOB training (R2, R3).
-- M05 reservation-price model, fill simulator and hybrid integration (R1, R2, R4).
-- M06 API, operational reliability and deployment (R3, R4).
-- M07 user-facing dashboard, feedback experiments and documentation (R5, R6).
+- M05 predictive evaluation: macro-F1, calibration, failure cases and latency (R2, R3).
+- M06 reservation-price model, fill simulator and hybrid integration (R1, R2, R4).
+- M07 API, operational reliability and deployment (R3, R4).
+- M08 user-facing dashboard, feedback experiments and documentation (R5, R6).
 
 Status: design only for new pricing components. No trading or profitability claims.

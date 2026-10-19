@@ -13,19 +13,21 @@ This is an educational research prototype, not a live trading system or evidence
 - FI-2010 benchmark paper: https://doi.org/10.1002/for.2543
 
 ## Project milestones
-1. Implement and test basic top-of-book features.
-2. Audit FI-2010 provenance, schema, access, and licensing.
-3. Establish time-aware splits and leakage prevention.
-4. Train majority-class and logistic regression baselines.
-5. Implement and compare TLOB with identical evaluation rules.
-6. Evaluate macro-F1, calibration, failure cases, and latency.
-7. Assess spread-aware **simulated** decisions, explicitly stating assumptions.
-8. Add FastAPI, tests, CI/CD, Docker, and monitoring.
+Milestones use the IDs M01–M08 across all project documents; see [docs/learning-path.md](docs/learning-path.md) and [docs/rbc-responsibility-map.md](docs/rbc-responsibility-map.md).
+
+- **M01** Implement and test basic top-of-book features.
+- **M02** Frame commercial requirements and KPIs; specify quotes and a fixed-spread pricing baseline.
+- **M03** Audit FI-2010 provenance, schema, access, and licensing; establish time-aware splits and leakage prevention.
+- **M04** Train majority-class and logistic regression baselines; implement TLOB under identical evaluation rules.
+- **M05** Evaluate macro-F1, calibration, failure cases, and latency.
+- **M06** Assess spread-aware **simulated** decisions with an Avellaneda–Stoikov quote engine, explicitly stating assumptions.
+- **M07** Add FastAPI, tests, CI/CD, Docker, and monitoring.
+- **M08** Add a user-facing dashboard, feedback experiments, and documentation.
 
 ## Status
-**Milestone 01: Initial scaffold.** No models have been trained and no empirical results have been measured or claimed.
+**M01: Initial scaffold.** No models have been trained and no empirical results have been measured or claimed.
 
-## Run lesson 01
+## Run the M01 lesson
 Python 3.10+ is enough. No external libraries required.
 
 ```bash
@@ -38,8 +40,9 @@ python -m src.market_features
 ## Repository layout
 - `src/market_features.py`: first order-book calculations
 - `tests/test_market_features.py`: unit tests
-- `docs/learning-path.md`: stage-by-stage exercises and interview checks
+- `docs/learning-path.md`: milestone-by-milestone (M01–M08) exercises and interview checks
 - `docs/data-and-evaluation.md`: dataset provenance and experiment protocol
+- `docs/adr/`: Architecture Decision Records
 
 Raw data, models and results will only be included after access, licensing and verification. Referenced research remains attributed; a license for independently written code can be selected before wider reuse.
 
