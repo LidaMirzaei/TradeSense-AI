@@ -42,3 +42,6 @@ python -m src.market_features
 - `docs/data-and-evaluation.md`: dataset provenance and experiment protocol
 
 Raw data, models and results will only be included after access, licensing and verification. Referenced research remains attributed; a license for independently written code can be selected before wider reuse.
+
+## RBC role alignment and pricing extension
+See [the six-responsibility map and linked TLOB + Avellaneda–Stoikov design](docs/rbc-responsibility-map.md). The pricing module is planned, not yet implemented.
